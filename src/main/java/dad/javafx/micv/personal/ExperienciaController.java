@@ -12,6 +12,7 @@ import dad.javafx.micv.model.Experiencia;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -35,7 +36,7 @@ import javafx.util.converter.LocalDateStringConverter;
 
 public class ExperienciaController implements Initializable{
 	
-	private ListProperty<Experiencia> expe = new SimpleListProperty<Experiencia>();
+	private ListProperty<Experiencia> expe = new SimpleListProperty<Experiencia>(FXCollections.observableArrayList());
 	
 	public ExperienciaController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ExperienciaView.fxml"));

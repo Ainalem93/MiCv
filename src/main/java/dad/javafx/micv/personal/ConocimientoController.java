@@ -8,13 +8,12 @@ import java.util.ResourceBundle;
 
 import dad.javafx.micv.model.CV;
 import dad.javafx.micv.model.Conocimiento;
-import dad.javafx.micv.model.Experiencia;
 import dad.javafx.micv.model.Idioma;
 import dad.javafx.micv.model.Nivel;
-import dad.javafx.micv.model.Titulo;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -37,11 +36,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.converter.LocalDateStringConverter;
+
 
 public class ConocimientoController implements Initializable{
 	
-	private ListProperty<Conocimiento> conocimiento = new SimpleListProperty<Conocimiento>();
+	private ListProperty<Conocimiento> conocimiento = new SimpleListProperty<Conocimiento>(FXCollections.observableArrayList());
 	
 	public ConocimientoController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/ConocimientosView.fxml"));

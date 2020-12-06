@@ -8,7 +8,6 @@ import java.util.ResourceBundle;
 import dad.javafx.micv.model.CV;
 import dad.javafx.micv.model.Contacto;
 import dad.javafx.micv.model.Email;
-import dad.javafx.micv.model.Personal;
 import dad.javafx.micv.model.Telefono;
 import dad.javafx.micv.model.TipoDeTelefono;
 import dad.javafx.micv.model.Web;

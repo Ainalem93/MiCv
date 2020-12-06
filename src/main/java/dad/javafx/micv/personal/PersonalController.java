@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-import javax.print.attribute.standard.MediaSize.NA;
-
 import dad.javafx.micv.model.CV;
 import dad.javafx.micv.model.Nacionalidad;
 import dad.javafx.micv.model.Personal;
