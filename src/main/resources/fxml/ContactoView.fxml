@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="view" dividerPositions="0.32997481108312343, 0.6775818639798489" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="405.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <TitledPane animated="false" collapsible="false" prefHeight="128.0" prefWidth="598.0" text="Teléfono">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="103.0" prefWidth="596.0">
+               <children>
+                  <TableView fx:id="telefono" prefHeight="103.0" prefWidth="498.0">
+                    <columns>
+                      <TableColumn fx:id="numero" prefWidth="115.0" text="Número" />
+                      <TableColumn fx:id="tipo" prefWidth="381.0" text="Tipo" />
+                    </columns>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TableView>
+                  <VBox layoutX="496.0" layoutY="-3.0" prefHeight="105.0" prefWidth="94.0">
+                     <children>
+                        <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#añadirUnoOnAction" text="Añadir" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="2.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#eliminarUnoOnAction" text="Eliminar">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" prefHeight="126.0" prefWidth="598.0" text="Direcciónes de correo">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="127.0" prefWidth="590.0">
+               <children>
+                  <TableView fx:id="correo" prefHeight="103.0" prefWidth="499.0">
+                    <columns>
+                      <TableColumn fx:id="email" prefWidth="486.0" text="E-mails" />
+                    </columns>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TableView>
+                  <VBox layoutX="499.0" layoutY="-4.0" prefHeight="105.0" prefWidth="94.0">
+                     <children>
+                        <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#añadirDosOnAction" text="Añadir">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="2.0" right="5.0" top="6.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#eliminarDosOnAction" text="Eliminar">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="2.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" prefHeight="193.0" prefWidth="598.0" text="Webs">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="web" prefHeight="103.0" prefWidth="498.0">
+                    <columns>
+                      <TableColumn fx:id="url" prefWidth="486.0" text="URL" />
+                    </columns>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TableView>
+                  <VBox layoutX="496.0" layoutY="-6.0" prefHeight="105.0" prefWidth="94.0">
+                     <children>
+                        <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#añadirTresOnAction" text="Añadir">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#eliminarTresOnAction" text="Eliminar">
+                           <VBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </TitledPane>
+   </items>
+</SplitPane>
